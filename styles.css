@@ -1,0 +1,103 @@
+/* Meta Ads Downloader - Minimal Notion-style Aesthetic */
+
+:root {
+    --notion-bg: #ffffff;
+    --notion-text: #37352f;
+    --notion-border: #e1e1e1;
+    --notion-hover: #f1f1f1;
+    --notion-primary: #6366f1;
+    /* Kept for primary actions but can be muted */
+    --notion-secondary: #475569;
+}
+
+.meta-ads-floating-bar {
+    position: fixed !important;
+    bottom: 24px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    background: var(--notion-bg) !important;
+    color: var(--notion-text) !important;
+    padding: 8px 16px !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    z-index: 2147483647 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 0 0 1px var(--notion-border) !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}
+
+.meta-ads-floating-bar.hidden {
+    display: none !important;
+}
+
+.meta-ads-bar-count {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    color: #838170 !important;
+}
+
+.meta-ads-bar-btn {
+    background: transparent !important;
+    color: var(--notion-text) !important;
+    border: 1px solid var(--notion-border) !important;
+    padding: 6px 12px !important;
+    border-radius: 4px !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+    transition: background 0.1s !important;
+}
+
+.meta-ads-bar-btn:hover {
+    background: var(--notion-hover) !important;
+}
+
+.meta-ads-bar-btn.secondary {
+    border: none !important;
+    color: #838170 !important;
+}
+
+/* Normaris Global Button */
+#meta-ads-normaris-btn {
+    position: fixed !important;
+    bottom: 24px !important;
+    right: 24px !important;
+    width: 56px !important;
+    height: 56px !important;
+    background: var(--notion-bg) !important;
+    border: 1px solid var(--notion-border) !important;
+    border-radius: 50% !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    z-index: 2147483647 !important;
+    transition: transform 0.2s, box-shadow 0.2s !important;
+}
+
+#meta-ads-normaris-btn:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16) !important;
+    background: var(--notion-hover) !important;
+}
+
+#meta-ads-normaris-btn svg {
+    width: 28px !important;
+    height: 28px !important;
+    fill: var(--notion-text) !important;
+}
+
+/* Toolbar minimal styles */
+.meta-ads-toolbar {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !important;
+}
+
+.m-btn {
+    transition: background 0.1s, transform 0.05s !important;
+}
+
+.m-btn:active {
+    transform: scale(0.98) !important;
+}

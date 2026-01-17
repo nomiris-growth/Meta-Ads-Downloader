@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Nomiris Ads Downloader",
+    "version": "2.2.3",
+    "description": "Download ads, videos, and images from Meta Ads Library",
+    "permissions": [
+        "activeTab",
+        "downloads"
+    ],
+    "host_permissions": [
+        "https://*.facebook.com/ads/library/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.facebook.com/ads/library/*"
+            ],
+            "js": [
+                "jszip.min.js",
+                "content.js"
+            ],
+            "css": [
+                "styles.css"
+            ],
+            "run_at": "document_start",
+            "all_frames": false
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}
